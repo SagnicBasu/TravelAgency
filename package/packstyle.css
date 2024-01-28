@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hero{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    width: 100%;
+    height:100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backvid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.herocont{
+    text-align: center;
+}
+.herocont h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.herocont h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.herocont p{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .backvid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .backvid{
+        width: auto;
+        height: 100%;
+    }
+}
+.row1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: aquamarine;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('eu.jpeg');
+    background-position: center;
+    background-size: cover; 
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: aquamarine;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('africa.jpeg');
+    background-position: center;
+    background-size: cover; 
+}
+.row3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: aquamarine;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('india.jpeg');
+    background-position: center;
+    background-size: cover; 
+}
+.places{
+    display: inline;
+    width: 40%;
+    margin-left: 100px;
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    font-family: sans-serif;
+}
+.places h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.places p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 18px;
+    line-height: 35px;
+}
+.card-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 50px;
+    margin-left: px;
+    padding: 40px;
+}
+.card{
+    width: 400px;
+    height: 245px;
+    background-color: #f7f5ea;
+    border-radius: 20px;
+    box-shadow: 0px 6px 8px rgba(0,0,0,0.6);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    margin-bottom: 50px;
+}
+.card:hover{
+    transform: translateY(-10px) scale(1.05) ;
+    height: 400px;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.content{
+    height: 20px;
+    padding: 15px;
+}
+.card-cont h1{
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-top: -7px;
+}
+.card-cont p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+.card-button{
+   display: inline-block; 
+   background-color: #dace7e;
+   color:#000000;
+   text-decoration: none;
+   border-radius: 7px;
+   padding: 8px 10px;
+}
+.card-button:hover{
+    background-color: rgb(194, 167, 87);
+}
