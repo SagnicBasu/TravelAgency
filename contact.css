@@ -1,0 +1,74 @@
+*{
+    font-family: 'Dongle', sans-serif;;
+    
+}
+.contact{
+    padding: 80px;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+.contact h3{
+    /* font-family: "Dongle-bold"; */
+    font-size: 3rem;
+}
+.contact-info p{
+    /* font-family: "Dongle-regular"; */
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+} 
+.contact-info li{
+    margin: 0 20px;
+    /* font-family: "Dongle-regular"; */
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  
+}
+.contact-info li a{
+    text-decoration: none;
+    /* font-family: "Dongle-regular"; */
+    color: black;
+}
+.contact-info i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.form{
+    width: 100%;
+}
+input,textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    /* font-family: "Dongle-regular"; */
+}
+textarea{
+    height: 200px;
+}
+.form button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 30px;
+    border-radius: 50px;
+    /* font-family: "Dongle-light"; */
+    font-size: 1.6rem;
+    border: none;
+    transition: all ease 0.3s;
+}
+.form button:hover{
+    background-color: #333;
+}
