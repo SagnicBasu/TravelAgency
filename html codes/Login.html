@@ -1,107 +1,67 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-  body {
-    background: #270d7f;
-    font-family: 'Open Sans';
-  }
-  
-  h1 {
-    text-align: center;
-    color: white;
-    font-family: 'Bree Serif';
-    font-size: 45px;
-  }
-  
-  #container {
-    width: 400px;
-    height: 320px;
-    margin: 25px auto;
-    background: rgba(110, 123, 145, 0.3);
-    border-radius: 5px;
-    padding-bottom: 50px;
-    position: relative;
-  }
-  
-  img {
-    height: 30%;
-    left: 140px;
-    top: -50px;
-    position: absolute;
-  }
-  
-  input[type="text"], [type="password"] {
-    width: 300px;
-    height: 30px;
-    padding: 10px;
-    margin: 20px 0 5px 40px;
-    border-radius: 5px;
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  input[type="text"].email-area {
-    margin-top: 85px;
-  }
-  
-  input[type="submit"] {
-    width: 320px;
-    height: 50px;
-    margin: 20px 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #4EA95F;
-    color: #F1F3F7;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background: #387a44;
-    border: 1px solid #fff;
-  }
-  
-  a {
-    margin: 0 130px;
-    text-decoration: none;
-    color: #A4A9B0;
-  }
-  
-  a:hover {
-  color:#fff;
-  }
-
-  
-    </style>
-</head>
-
-<body>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Bree+Serif:300,400" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-
-<h1>Login Screen</h1><br>
-
-<div id="container">
-<img src="https://bit.ly/2aQB5uu" alt="login icon"> 
-  <form>
-      <input type="text" class="email-area" placeholder="Username">
-    
-    <input type="password" placeholder="Password">
-    
-    <input type="submit" value="Login" class="btn-login">
-   <a href="front.html">Forgot password?</a> 
-   <br>
-    <button><a href="front.html">Go to Home Page</a></button>
- </form>
-</div>
-
-</body>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Transparent Login Form HTML CSS</title>
+      <link rel="stylesheet" href="Login.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="bg-img">
+         <div class="content">
+            <header>Login Form</header>
+            <form action="#">
+               <div class="field">
+                  <span class="fa fa-user"></span>
+                  <input type="text" required placeholder="Email or Phone">
+               </div>
+               <div class="field space">
+                  <span class="fa fa-lock"></span>
+                  <input type="password" class="pass-key" required placeholder="Password">
+                  <span class="show">SHOW</span>
+               </div>
+               <div class="pass">
+                  <a href="#">Forgot Password?</a>
+               </div>
+               <div class="field">
+                  <input type="submit" value="LOGIN">
+               </div>
+            </form>
+            <div class="login">
+               Or login with
+            </div>
+            <div class="links">
+               <div class="facebook">
+                  <i class="fab fa-facebook-f"><span>Facebook</span></i>
+               </div>
+               <div class="instagram">
+                  <i class="fab fa-instagram"><span>Instagram</span></i>
+               </div>
+            </div>
+            <div class="signup">
+               Don't have account?
+               <a href="#">Signup Now</a>
+            </div>
+            <Br>
+            <div class="Home">
+                <a href="front.html">HOME</a>
+            </div>
+         </div>
+      </div>
+      <script>
+         const pass_field = document.querySelector('.pass-key');
+         const showBtn = document.querySelector('.show');
+         showBtn.addEventListener('click', function(){
+          if(pass_field.type === "password"){
+            pass_field.type = "text";
+            showBtn.textContent = "HIDE";
+            showBtn.style.color = "#3498db";
+          }else{
+            pass_field.type = "password";
+            showBtn.textContent = "SHOW";
+            showBtn.style.color = "#222";
+          }
+         });
+      </script>
+   </body>
 </html>

@@ -145,7 +145,9 @@ button.read__more {
   background-color: var(--extra-light);
   color: var(--text-dark);
 }
-
+button.our__blogs {
+  background-color: var(--primary-color);
+}
 button.our__blogs:hover {
   background-color: var(--text-light);
 }
