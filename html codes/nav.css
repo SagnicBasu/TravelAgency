@@ -1,0 +1,81 @@
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--extra-light);
+    align-items: flex-start;
+}
+  
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+  
+.nav__links .link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--extra-light);
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration-color: #fead53;
+}
+  
+.nav__links .link:hover {
+    color: var(--primary-color);
+}
+  
+.search__box {
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--extra-light);
+}
+  
+.search__box input {
+    color: var(--extra-light);
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+  
+.search__box i {
+    color: var(--extra-light);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
