@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="home.js" defer></script>
 </head>
 <body>
     <header>
         
         <nav class="navbar">
-            <a href="#" class="logo">Travel Agency</a>
+            <a href="index.html" class="logo">Travel Agency</a>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="index2.html">Destinations</a></li>
                 <li><a href="index2.html">Packages</a></li>
                 <li><a href="index3.html">Contact</a></li>
             </ul>
-            <button class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+           
         </nav>
     </header>
     <main>
         <section class="hero">
-            <h2>Welcome to our restaurant</h2>
-            <p>Enjoy our delicious food</p>
+            <h2>Travel the word</h2>
+            <p>Enrich your life</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2022 Restaurant. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementsByClassName('navbar').addEventListener('click', function () {
+            var menuItems = document.getElementsByClassName('nav-links');
+            menuItems.style.display = (menuItems.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+
 </body>
 </html>
