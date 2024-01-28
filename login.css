@@ -1,14 +1,5 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-  body {
-    background: #270d7f;
+body {
+    background: #47505F;
     font-family: 'Open Sans';
   }
   
@@ -77,31 +68,3 @@
   a:hover {
   color:#fff;
   }
-
-  
-    </style>
-</head>
-
-<body>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Bree+Serif:300,400" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-
-<h1>Login Screen</h1><br>
-
-<div id="container">
-<img src="https://bit.ly/2aQB5uu" alt="login icon"> 
-  <form>
-      <input type="text" class="email-area" placeholder="Username">
-    
-    <input type="password" placeholder="Password">
-    
-    <input type="submit" value="Login" class="btn-login">
-   <a href="front.html">Forgot password?</a> 
-   <br>
-    <button><a href="front.html">Go to Home Page</a></button>
- </form>
-</div>
-
-</body>
-</html>
