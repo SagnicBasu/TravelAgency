@@ -1,8 +1,63 @@
 /* Reset some styles */
-body, h1, p {
+ h1, p {
     margin: 0;
     padding: 0;
   }
+
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
   
   /* Landing page styles */
   header {
